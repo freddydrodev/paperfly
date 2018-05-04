@@ -23,7 +23,8 @@ class Login extends Component {
     return (
       <Col>
         <Box
-          onButtonRightClick={this.LoginHandler}
+          btn={{ title: "Login", action: this.LoginHandler }}
+          link={{title: "Registration", to: '/registration'}}
           content={
             <LoginForm wrappedComponentRef={(comp) => (this.comp = comp)} />
           }

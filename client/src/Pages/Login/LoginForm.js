@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Form, Input, Icon } from "antd";
+import { Link } from "react-router-dom";
 
 const FormItem = Form.Item;
 
@@ -14,7 +15,7 @@ class LoginForm extends Component {
     } = this.props.form;
     return (
       <Form>
-        <FormItem label="Username" className="mb-3" required>
+        <FormItem label="Username" required>
           {getFieldDecorator("username", {
             rules: [
               {
@@ -32,7 +33,7 @@ class LoginForm extends Component {
             />
           )}
         </FormItem>
-        <FormItem label="Password" className="mb-3" required>
+        <FormItem label="Password" required>
           {getFieldDecorator("password", {
             rules: [
               {
@@ -50,6 +51,9 @@ class LoginForm extends Component {
               placeholder="Enter your password here"
             />
           )}
+        </FormItem>
+        <FormItem>
+          <h4 className="mb-0 text-center uppercase"><Link to="/password-forget" className="text-muted">Password Forget</Link></h4>
         </FormItem>
       </Form>
     );
