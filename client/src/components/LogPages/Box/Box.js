@@ -5,9 +5,15 @@ import PropTypes from "prop-types";
 import "./Box.less";
 
 class Box extends Component {
+  componentDidMount() {}
   render() {
-    const { logo, description, title, content } = this.props;
-
+    const {
+      logo,
+      description,
+      title,
+      onButtonRightClick,
+      onButtonLeftClick
+    } = this.props;
     return (
       <div className="logBox">
         <div className="logBoxHeader p-3">
@@ -21,7 +27,7 @@ class Box extends Component {
         </div>
         <div className="px-3">
           <h2>Login</h2>
-          {content}
+          {this.props.content}
         </div>
         <Row type="flex">
           <Col span={12}>
@@ -29,6 +35,7 @@ class Box extends Component {
               size="large"
               type="secondary"
               className="border-0 rounded-0 w-100 py-3"
+              onClick={onButtonLeftClick}
             >
               Register
             </Button>
@@ -39,6 +46,7 @@ class Box extends Component {
               type="dark"
               htmlType="submit"
               className="border-0 rounded-0 w-100 py-3"
+              onClick={onButtonRightClick}
             >
               Sign In
             </Button>
@@ -55,5 +63,6 @@ Box.propTypes = {
   logo: PropTypes.bool,
   description: PropTypes.string,
   title: PropTypes.string,
-  content: PropTypes.element.isRequired
+  onButtonLeftClick: PropTypes.func.isRequired,
+  onButtonRightClick: PropTypes.func.isRequired
 };
