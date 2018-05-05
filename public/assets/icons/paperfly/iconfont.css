@@ -8,193 +8,194 @@
 }
 
 .iconfont,
-[class*="icon-"] {
+[class*="icon-"],
+.anticon[class*="anticon-icon-"],
+.anticon[class*="anticon-icon-"]:before {
   font-family:"iconfont" !important;
-  font-size:16px;
   font-style:normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-icon60wechatempty2x:before { content: "\e692"; }
+[class*="icon-icon60wechatempty2x"]:before { content: "\e692"; }
 
-.icon-arrowleftc:before { content: "\e6c3"; }
+[class*="icon-arrowleftc"]:before { content: "\e6c3"; }
 
-.icon-arrowbottomright:before { content: "\e642"; }
+[class*="icon-arrowbottomright"]:before { content: "\e642"; }
 
-.icon-icontychatbubble2:before { content: "\e637"; }
+[class*="icon-icontychatbubble2"]:before { content: "\e637"; }
 
-.icon-icontychatbubble:before { content: "\e640"; }
+[class*="icon-icontychatbubble"]:before { content: "\e640"; }
 
-.icon-facebookfacebook51:before { content: "\e604"; }
+[class*="icon-facebookfacebook51"]:before { content: "\e604"; }
 
-.icon-314-arrow-up-left2:before { content: "\e69d"; }
+[class*="icon-314-arrow-up-left2"]:before { content: "\e69d"; }
 
-.icon-tuichu:before { content: "\e607"; }
+[class*="icon-tuichu"]:before { content: "\e607"; }
 
-.icon-wendang:before { content: "\e620"; }
+[class*="icon-wendang"]:before { content: "\e620"; }
 
-.icon-shipingkaiqi-xue:before { content: "\e628"; }
+[class*="icon-shipingkaiqi-xue"]:before { content: "\e628"; }
 
-.icon-shipingjinzhi-copy:before { content: "\e62a"; }
+[class*="icon-shipingjinzhi-copy"]:before { content: "\e62a"; }
 
-.icon-bianji:before { content: "\e68e"; }
+[class*="icon-bianji"]:before { content: "\e68e"; }
 
-.icon-cuowu:before { content: "\e68c"; }
+[class*="icon-cuowu"]:before { content: "\e68c"; }
 
-.icon-fabu:before { content: "\e68f"; }
+[class*="icon-fabu"]:before { content: "\e68f"; }
 
-.icon-erweima:before { content: "\e690"; }
+[class*="icon-erweima"]:before { content: "\e690"; }
 
-.icon-huiyuan:before { content: "\e693"; }
+[class*="icon-huiyuan"]:before { content: "\e693"; }
 
-.icon-gongzhonghao:before { content: "\e694"; }
+[class*="icon-gongzhonghao"]:before { content: "\e694"; }
 
-.icon-xinxiliebiao:before { content: "\e695"; }
+[class*="icon-xinxiliebiao"]:before { content: "\e695"; }
 
-.icon-nv:before { content: "\e696"; }
+[class*="icon-nv"]:before { content: "\e696"; }
 
-.icon-nan:before { content: "\e697"; }
+[class*="icon-nan"]:before { content: "\e697"; }
 
-.icon-xiaoxi:before { content: "\e69a"; }
+[class*="icon-xiaoxi"]:before { content: "\e69a"; }
 
-.icon-youxiang:before { content: "\e69e"; }
+[class*="icon-youxiang"]:before { content: "\e69e"; }
 
-.icon-zhuye:before { content: "\e69f"; }
+[class*="icon-zhuye"]:before { content: "\e69f"; }
 
-.icon-tupianliebiao:before { content: "\e6a0"; }
+[class*="icon-tupianliebiao"]:before { content: "\e6a0"; }
 
-.icon-gengduo:before { content: "\e63b"; }
+[class*="icon-gengduo"]:before { content: "\e63b"; }
 
-.icon-rili:before { content: "\e63a"; }
+[class*="icon-rili"]:before { content: "\e63a"; }
 
-.icon-huiyuan1:before { content: "\e643"; }
+[class*="icon-huiyuan1"]:before { content: "\e643"; }
 
-.icon-gouwuche:before { content: "\e648"; }
+[class*="icon-gouwuche"]:before { content: "\e648"; }
 
-.icon-shaixuan:before { content: "\e64a"; }
+[class*="icon-shaixuan"]:before { content: "\e64a"; }
 
-.icon-shuaxin:before { content: "\e64b"; }
+[class*="icon-shuaxin"]:before { content: "\e64b"; }
 
-.icon-weizhi:before { content: "\e650"; }
+[class*="icon-weizhi"]:before { content: "\e650"; }
 
-.icon-align-left:before { content: "\e534"; }
+[class*="icon-align-left"]:before { content: "\e534"; }
 
-.icon-align-right:before { content: "\e535"; }
+[class*="icon-align-right"]:before { content: "\e535"; }
 
-.icon-ellipsis:before { content: "\e544"; }
+[class*="icon-ellipsis"]:before { content: "\e544"; }
 
-.icon-quan:before { content: "\f0306"; }
+[class*="icon-quan"]:before { content: "\f0306"; }
 
-.icon-dianpu:before { content: "\f0315"; }
+[class*="icon-dianpu"]:before { content: "\f0315"; }
 
-.icon-icon-test:before { content: "\e601"; }
+[class*="icon-icon-test"]:before { content: "\e601"; }
 
-.icon-icon-test1:before { content: "\e602"; }
+[class*="icon-icon-test1"]:before { content: "\e602"; }
 
-.icon-icon-test2:before { content: "\e603"; }
+[class*="icon-icon-test2"]:before { content: "\e603"; }
 
-.icon-chanpinpeizhi:before { content: "\e6e3"; }
+[class*="icon-chanpinpeizhi"]:before { content: "\e6e3"; }
 
-.icon-shuaxin1:before { content: "\e54d"; }
+[class*="icon-shuaxin1"]:before { content: "\e54d"; }
 
-.icon-youjiantou:before { content: "\e556"; }
+[class*="icon-youjiantou"]:before { content: "\e556"; }
 
-.icon-zuojiantou:before { content: "\e557"; }
+[class*="icon-zuojiantou"]:before { content: "\e557"; }
 
-.icon-shezhi:before { content: "\e605"; }
+[class*="icon-shezhi"]:before { content: "\e605"; }
 
-.icon-erji-jiaoseguanli:before { content: "\ea9d"; }
+[class*="icon-erji-jiaoseguanli"]:before { content: "\ea9d"; }
 
-.icon-erji-gaojingbaobiao:before { content: "\ea9e"; }
+[class*="icon-erji-gaojingbaobiao"]:before { content: "\ea9e"; }
 
-.icon-erji-peieguanli:before { content: "\eab4"; }
+[class*="icon-erji-peieguanli"]:before { content: "\eab4"; }
 
-.icon-zhuye1:before { content: "\e608"; }
+[class*="icon-zhuye1"]:before { content: "\e608"; }
 
-.icon-gouwuche1:before { content: "\e606"; }
+[class*="icon-gouwuche1"]:before { content: "\e606"; }
 
-.icon-shezhi1:before { content: "\e609"; }
+[class*="icon-shezhi1"]:before { content: "\e609"; }
 
-.icon-viber:before { content: "\e60a"; }
+[class*="icon-viber"]:before { content: "\e60a"; }
 
-.icon-graphql:before { content: "\e60b"; }
+[class*="icon-graphql"]:before { content: "\e60b"; }
 
-.icon-instagram:before { content: "\e60c"; }
+[class*="icon-instagram"]:before { content: "\e60c"; }
 
-.icon-ebay:before { content: "\e60d"; }
+[class*="icon-ebay"]:before { content: "\e60d"; }
 
-.icon-youtube:before { content: "\e612"; }
+[class*="icon-youtube"]:before { content: "\e612"; }
 
-.icon-meteor:before { content: "\e615"; }
+[class*="icon-meteor"]:before { content: "\e615"; }
 
-.icon-googleplus:before { content: "\e616"; }
+[class*="icon-googleplus"]:before { content: "\e616"; }
 
-.icon-soundcloud:before { content: "\e61a"; }
+[class*="icon-soundcloud"]:before { content: "\e61a"; }
 
-.icon-gmail:before { content: "\e61d"; }
+[class*="icon-gmail"]:before { content: "\e61d"; }
 
-.icon-shopify:before { content: "\e631"; }
+[class*="icon-shopify"]:before { content: "\e631"; }
 
-.icon-whatsapp:before { content: "\e646"; }
+[class*="icon-whatsapp"]:before { content: "\e646"; }
 
-.icon-skype:before { content: "\e649"; }
+[class*="icon-skype"]:before { content: "\e649"; }
 
-.icon-react:before { content: "\e64c"; }
+[class*="icon-react"]:before { content: "\e64c"; }
 
-.icon-messenger:before { content: "\e663"; }
+[class*="icon-messenger"]:before { content: "\e663"; }
 
-.icon-paypal:before { content: "\e667"; }
+[class*="icon-paypal"]:before { content: "\e667"; }
 
-.icon-redux:before { content: "\e66c"; }
+[class*="icon-redux"]:before { content: "\e66c"; }
 
-.icon-facebook:before { content: "\e66e"; }
+[class*="icon-facebook"]:before { content: "\e66e"; }
 
-.icon-tishi:before { content: "\e60e"; }
+[class*="icon-tishi"]:before { content: "\e60e"; }
 
-.icon-zuobiao:before { content: "\e60f"; }
+[class*="icon-zuobiao"]:before { content: "\e60f"; }
 
-.icon-biaoqian:before { content: "\e638"; }
+[class*="icon-biaoqian"]:before { content: "\e638"; }
 
-.icon-bianji1:before { content: "\e639"; }
+[class*="icon-bianji1"]:before { content: "\e639"; }
 
-.icon-dingdan:before { content: "\e63c"; }
+[class*="icon-dingdan"]:before { content: "\e63c"; }
 
-.icon-dingwei:before { content: "\e63d"; }
+[class*="icon-dingwei"]:before { content: "\e63d"; }
 
-.icon-erweima1:before { content: "\e63e"; }
+[class*="icon-erweima1"]:before { content: "\e63e"; }
 
-.icon-gouwuche2:before { content: "\e63f"; }
+[class*="icon-gouwuche2"]:before { content: "\e63f"; }
 
-.icon-kehu:before { content: "\e645"; }
+[class*="icon-kehu"]:before { content: "\e645"; }
 
-.icon-piao:before { content: "\e647"; }
+[class*="icon-piao"]:before { content: "\e647"; }
 
-.icon-qidong:before { content: "\e64d"; }
+[class*="icon-qidong"]:before { content: "\e64d"; }
 
-.icon-qunzu:before { content: "\e64e"; }
+[class*="icon-qunzu"]:before { content: "\e64e"; }
 
-.icon-shangpin:before { content: "\e64f"; }
+[class*="icon-shangpin"]:before { content: "\e64f"; }
 
-.icon-rili1:before { content: "\e651"; }
+[class*="icon-rili1"]:before { content: "\e651"; }
 
-.icon-shezhi2:before { content: "\e652"; }
+[class*="icon-shezhi2"]:before { content: "\e652"; }
 
-.icon-shijianxuanzeqi:before { content: "\e653"; }
+[class*="icon-shijianxuanzeqi"]:before { content: "\e653"; }
 
-.icon-sousuo:before { content: "\e654"; }
+[class*="icon-sousuo"]:before { content: "\e654"; }
 
-.icon-tishi1:before { content: "\e655"; }
+[class*="icon-tishi1"]:before { content: "\e655"; }
 
-.icon-wenjianjia:before { content: "\e656"; }
+[class*="icon-wenjianjia"]:before { content: "\e656"; }
 
-.icon-wuliu:before { content: "\e657"; }
+[class*="icon-wuliu"]:before { content: "\e657"; }
 
-.icon-youjian:before { content: "\e658"; }
+[class*="icon-youjian"]:before { content: "\e658"; }
 
-.icon-zhexiantu:before { content: "\e659"; }
+[class*="icon-zhexiantu"]:before { content: "\e659"; }
 
-.icon-zhuye2:before { content: "\e65a"; }
+[class*="icon-zhuye2"]:before { content: "\e65a"; }
 
-.icon-jianpan:before { content: "\e61c"; }
+[class*="icon-jianpan"]:before { content: "\e61c"; }
 

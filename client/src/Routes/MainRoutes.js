@@ -1,4 +1,4 @@
-import AppWrapper from '../Containers/AppWrapper.js'
+import AppWrapper from "../Containers/AppWrapper/AppWrapper.js";
 import LogWrapper from "../Containers/LogWrapper/LogWrapper.js";
 
 const routes = [
