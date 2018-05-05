@@ -12,8 +12,7 @@ const iconStyle = { fontSize: 24, lineHeight: "64px", height: 64 };
 class AppSider extends Component {
   render() {
     const { collapsed, collapseHandler } = this.props;
-    const menuLeft = (
-      <Menu className="leftMenu">
+    const menuLeft = <Menu className="leftMenu">
         {config.map((menu) => (
           <MenuItem
             key={menu.title}
@@ -24,20 +23,21 @@ class AppSider extends Component {
             <NavLink
               to={menu.to}
               exact={menu.exact ? true : false}
-              className={`flex middle center  ${collapsed ? "w-100" : "left"}`}
+              className={`flex middle w-100 ${
+                collapsed ? "center" : "left"
+              }`}
             >
               <Icon type={menu.icon} style={iconStyle} />
               <span style={{ fontSize: 13 }}>{menu.title}</span>
             </NavLink>
           </MenuItem>
         ))}
-      </Menu>
-    );
+      </Menu>;
     return (
       <Sider
         collapsed={collapsed}
         collapsedWidth={64}
-        className="vh-100 fixed left top"
+        className="vh-100 fixed left top AppSider"
       >
         <Button
           icon={collapsed ? "icon-align-right" : "icon-align-left"}
