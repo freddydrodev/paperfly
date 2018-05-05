@@ -10,21 +10,10 @@ const MenuItem = Menu.Item;
 const iconStyle = { fontSize: 24, lineHeight: "64px", height: 64 };
 
 class AppSider extends Component {
-  state = {
-    collapsed: true
-  };
-
-  collapseHandler = () => {
-    const collapsed = this.state.collapsed;
-
-    this.setState({
-      collapsed: !collapsed
-    });
-  };
-
   render() {
-    const { collapsed } = this.state;
-    const menuLeft = <Menu className="leftMenu">
+    const { collapsed, collapseHandler } = this.props;
+    const menuLeft = (
+      <Menu className="leftMenu">
         {config.map((menu) => (
           <MenuItem
             key={menu.title}
@@ -35,16 +24,15 @@ class AppSider extends Component {
             <NavLink
               to={menu.to}
               exact={menu.exact ? true : false}
-              className={`flex middle center ${
-                collapsed ? "w-100" : "left"
-              }`}
+              className={`flex middle center  ${collapsed ? "w-100" : "left"}`}
             >
               <Icon type={menu.icon} style={iconStyle} />
-              <span style={{ fontSize: 14 }}>{menu.title}</span>
+              <span style={{ fontSize: 13 }}>{menu.title}</span>
             </NavLink>
           </MenuItem>
         ))}
-      </Menu>;
+      </Menu>
+    );
     return (
       <Sider
         collapsed={collapsed}
@@ -58,7 +46,7 @@ class AppSider extends Component {
           size="large"
           className="rounded-0 w-100"
           style={iconStyle}
-          onClick={this.collapseHandler}
+          onClick={collapseHandler}
         />
         {menuLeft}
       </Sider>
