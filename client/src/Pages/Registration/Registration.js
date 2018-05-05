@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Col } from "antd";
+import { Redirect } from "react-router-dom";
 
 import Box from "../../components/LogPages/Box/Box.js";
 import RegistrationForm from "./RegistrationForm.js";
@@ -14,8 +15,9 @@ class Registration extends Component {
 
       //verification here
 
-      console.log("Received values of form: ", values);
+      console.log("Registration: ", values);
       form.resetFields();
+      this.props.history.push("/app/dashboard");
     });
   };
 

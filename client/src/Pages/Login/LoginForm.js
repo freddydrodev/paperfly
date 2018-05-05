@@ -44,7 +44,7 @@ class LoginForm extends Component {
             ]
           })(
             <Input
-              prefix={<Icon type="user" />}
+              prefix={<Icon type="key" />}
               size="large"
               type="password"
               required
@@ -53,7 +53,11 @@ class LoginForm extends Component {
           )}
         </FormItem>
         <FormItem>
-          <h4 className="mb-0 text-center uppercase"><Link to="/password-forget" className="text-muted">Password Forget</Link></h4>
+          <h4 className="mb-0 text-center uppercase">
+            <Link to="/password-forget" className="text-muted">
+              Password Forget
+            </Link>
+          </h4>
         </FormItem>
       </Form>
     );

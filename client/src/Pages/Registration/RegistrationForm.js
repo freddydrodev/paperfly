@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, Input, Icon, Row, Col, Select, message } from "antd";
+import { Form, Input, Icon, Row, Col, Select, Checkbox } from "antd";
 import { Link } from "react-router-dom";
 
 const FormItem = Form.Item;
@@ -79,7 +79,7 @@ class RegistrationForm extends Component {
                 ]
               })(
                 <Input
-                  prefix={<Icon type="user" />}
+                  prefix={<Icon type="home" />}
                   size="large"
                   required
                   placeholder="Your company name here"
@@ -106,7 +106,7 @@ class RegistrationForm extends Component {
                 ]
               })(
                 <Input
-                  prefix={<Icon type="user" />}
+                  prefix={<Icon type="mail" />}
                   type="email"
                   size="large"
                   required
@@ -168,7 +168,7 @@ class RegistrationForm extends Component {
                 ]
               })(
                 <Input
-                  prefix={<Icon type="user" />}
+                  prefix={<Icon type="key" />}
                   size="large"
                   type="password"
                   required
@@ -190,7 +190,7 @@ class RegistrationForm extends Component {
                 ]
               })(
                 <Input
-                  prefix={<Icon type="user" />}
+                  prefix={<Icon type="key" />}
                   size="large"
                   type="password"
                   required
@@ -200,6 +200,28 @@ class RegistrationForm extends Component {
             </FormItem>
           </Col>
         </Row>
+        <FormItem>
+          {getFieldDecorator("condition", {
+            valuePropName: "checked",
+            rules: [
+              {
+                validator: (rule, value, callback) => {
+                  if (!value) {
+                    callback("You must accept the condition before register");
+                  }
+                  callback();
+                }
+              }
+            ]
+          })(
+            <Checkbox required>
+              Do you accept the rules and conditions.{" "}
+              <Link to="/conditions" target="_blank">
+                Read More
+              </Link>
+            </Checkbox>
+          )}
+        </FormItem>
       </Form>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Col } from "antd";
+import { Redirect } from "react-router-dom";
 
 import Box from "../../components/LogPages/Box/Box.js";
 import LoginForm from "./LoginForm.js";
@@ -14,8 +15,9 @@ class Login extends Component {
 
       //verification here
 
-      console.log("Received values of form: ", values);
+      console.log("Login: ", values);
       form.resetFields();
+      this.props.history.push("/app/dashboard");
     });
   };
 
@@ -24,7 +26,7 @@ class Login extends Component {
       <Col>
         <Box
           btn={{ title: "Login", action: this.LoginHandler }}
-          link={{title: "Registration", to: '/registration'}}
+          link={{ title: "Registration", to: "/registration" }}
           content={
             <LoginForm wrappedComponentRef={(comp) => (this.comp = comp)} />
           }
